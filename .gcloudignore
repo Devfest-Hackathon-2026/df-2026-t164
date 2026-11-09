@@ -1,0 +1,12 @@
+# デプロイに不要なものを除く（frontend/dist は含める）
+.git
+.gitignore
+.gcloudignore
+.env
+.env.*
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+backend/tests/
+frontend/node_modules/
+frontend/src/

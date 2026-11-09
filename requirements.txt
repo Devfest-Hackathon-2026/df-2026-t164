@@ -1,0 +1,2 @@
+# App Engine はルートの requirements.txt を読むため、backend のものを参照する
+-r backend/requirements.txt

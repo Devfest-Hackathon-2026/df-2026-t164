@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+google-genai
+python-multipart
+pytest
+httpx
+google-cloud-datastore
+google-cloud-storage
+requests

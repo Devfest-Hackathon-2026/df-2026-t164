@@ -1,4 +1,4 @@
-# 秘密情報（コミットしない）
+# 秘密情報（絶対にコミットしない）
 .env
 .env.*
 !.env.example
@@ -8,27 +8,41 @@
 *.pem
 *.key
 *.p12
+*firebase-adminsdk*.json
 service-account*.json
 credentials*.json
+credentials.json
 google-services.json
 GoogleService-Info.plist
 
-# 依存関係とビルドの成果物
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node / ビルド成果物
 node_modules/
 dist/
 build/
 out/
 .next/
 .wrangler/
-__pycache__/
-*.pyc
-.venv/
-venv/
+*.tsbuildinfo
+
+# Firebase emulators
+.firebase/
+firebase-debug.log
+firestore-debug.log
 
 # OS とエディタ
 .DS_Store
 Thumbs.db
-.idea/
-.vscode/*
+.vscode/
 !.vscode/extensions.json
+.idea/
 *.log
